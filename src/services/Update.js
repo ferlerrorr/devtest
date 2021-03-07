@@ -1,15 +1,15 @@
 const Connection = require('../database/Connection')
 
-module.exports = async(id, name, password) => {
+module.exports = async(id, name, qty, amount) => {
     try {
         const query = `UPDATE ` +
             `items ` +
             `SET ` +
-            `name = '${name}', ` +
-            `qty = '${qty}', ` +
-            `amount = '${amount}'`
-        `WHERE ` +
-        `id = ${id}`
+            `name =  '${name}', ` +
+            `qty =      '${qty}', ` +
+            `amount =   '${amount}' ` +
+            `WHERE ` +
+            `id = ${id}`
 
         await Connection(query)
 
