@@ -5,7 +5,7 @@ module.exports = async(name, qty, amount) => {
         const query = `INSERT INTO ` +
             `items ` +
             `VALUES ` +
-            `(null, '${name}', '${qty}', '${amount}')`
+            `(null, '${name}', '${qty}', '${amount}'))`
 
         await Connection(query)
 
