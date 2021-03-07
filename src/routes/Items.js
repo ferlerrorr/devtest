@@ -7,9 +7,9 @@ const UpdateService = require('../services/Update')
 const DeleteService = require('../services/Delete')
 
 router.post(`/create`, async(req, res) => {
-    const { username, password } = req.body
+    const { name, qty, amount } = req.body
 
-    const results = await CreateService(username, password)
+    const results = await CreateService(name, qty, amount)
 
     if (results) {
         res
@@ -48,9 +48,9 @@ router.get(`/retrieve`, async(req, res) => {
 })
 
 router.post(`/update`, async(req, res) => {
-    const { id, newUsername, newPassword } = req.body
+    const { id, newname, newqty, newamount } = req.body
 
-    const results = await UpdateService(id, newUsername, newPassword)
+    const results = await UpdateService(id, newname, newqty, newamount)
 
     if (results) {
         res
