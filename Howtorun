@@ -1,0 +1,10 @@
+install Node.Js in your machine to run the program
+install Postman for checking and testing of the api
+open CMD promt 
+type node -v (to check the version and if your machine has node.js)
+Navigate to folder
+type Code . (to open Visual Code)
+Start By typing - npm init
+type npm install express body-parser (to inject some dependencies)
+if you dont have nodemon install (npm install -g nodemon)
+run the code by typing - npm start
