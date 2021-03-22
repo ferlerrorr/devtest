@@ -1,5 +1,8 @@
+This SourceCode is an API of CRUD application created in Node.JS that can return and consume RESTful JSON api Calls 
+Requirements Libraries MYSQL,Express and EJS 
 install Node.Js in your machine to run the program
 install Postman for checking and testing of the api
+Create a Database in MYSQL - ("invetory") tables ("items") , columns ("id","name","qty","amount")
 open CMD promt 
 type node -v (to check the version and if your machine has node.js)
 Navigate to folder
